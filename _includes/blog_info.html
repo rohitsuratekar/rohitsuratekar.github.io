@@ -1,0 +1,46 @@
+<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+    <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent" onclick="shareBlog()">
+        <i class="material-icons mdl-color-text--white no-url" role="presentation">share</i>
+        <span class="visuallyhidden">share</span>
+    </button>
+
+    <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+        <a href="about">
+            <img src="../img/profile.png" height="300">
+        </a>
+        <h3>
+            Blog
+        </h3>
+        <div>
+            rohitsuratekar.com
+        </div>
+    </div>
+    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+        {%if site.posts.size > 0 %}
+        <div>
+            <strong>
+                <a href="all" class="no-url mdl-color-text--grey-600"> All Posts</a>
+            </strong>
+        </div>
+        {%endif%}
+
+        <ul class="mdl-menu mdl-js-menu mdl-menu--top-right mdl-js-ripple-effect" for="menubtn">
+
+            {%for cat in site.categories %}
+
+            <li class="mdl-menu__item">
+                <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">{{ cat | last | size }}</span>
+                    <span class="mdl-chip__text">{{cat}}</span>
+                </span>
+            </li>
+            {%endfor%}
+        </ul>
+        {%if site.posts.size > 0 %}
+        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">more_vert</i>
+            <span class="visuallyhidden">show menu</span>
+        </button>
+        {%endif%}
+    </div>
+</div>

@@ -1,0 +1,47 @@
+/**
+ * Body CSS
+ */
+
+.test {
+  color: red;
+  background: red;
+}
+
+.no-url {
+  text-decoration: none;
+}
+
+.blog .minilogo {
+  background-image: url('../img/user.png');
+}
+
+.blog--blogpost .blog__posts>.mdl-card .mdl-card__media {
+  height: 280px;
+}
+
+.social-btn__twitter {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+}
+
+.social-btn__blogger {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+}
+
+.social-btn__gplus {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+
+.card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  max-height: 256px;
+}
+
+.static-page-content {
+ margin: 16px;
+}
+
+.all-post-blog{
+  padding-top: 130px;
+}

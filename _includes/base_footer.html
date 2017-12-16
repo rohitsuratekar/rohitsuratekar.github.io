@@ -1,0 +1,17 @@
+<footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__middle-section">
+        <ul class="mdl-mini-footer__link-list">
+            <li>
+                <a href="{{ site.baseurl }}/credits">Website Credits</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/about">About Blog</a>
+            </li>
+            {%if site.posts.size > 0 %}
+            <li>
+                <a href="{{ site.baseurl }}/all">All Posts</a>
+            </li>
+            {%endif%}
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>All Posts</title>
+ {% include base_header.html %}
+</head>
+
+
+
+<body>
+    <div class="blog blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+        <main class="mdl-layout__content">
+            <div class="demo-back">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
+                    <i class="material-icons" role="presentation">arrow_back</i>
+                </a>
+            </div>
+            <div class="blog__posts mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-grid">
+                        {%for cat in site.categories %}
+                        <span class="mdl-chip mdl-badge mdl-badge--overlap" data-badge={{ cat | last | size }}>
+                            <span class="mdl-chip__text">{{cat|first}}</span>
+                        </span>
+                        {%endfor%}
+                    </div>
+                </div>
+                {%for post in site.posts%}
+                <div class="mdl-card amazing mdl-cell mdl-cell--6-col">
+                    {%if post.feature_image != null %}
+                    <div class="mdl-card__media mdl-color-text--grey-50" style=" background-image: url( {{post.feature_image}} );background-color:#004D40;">
+                        <h3>
+                            <a href="{{post.url}}">{{post.title}}</a>
+                        </h3>
+                    </div>
+                    {%else%}
+                    <div class="mdl-card__title mdl-color-text--grey-50">
+                        <h4>
+                            <a href="{{post.url}}" class="no-url">{{post.title}}</a>
+                        </h4>
+                    </div>
+                    {% endif %}
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+                        {{ post.content | strip_html | truncatewords: 50 }}
+                    </div>
+
+                    <div class="mdl-card__menu mdl-color-text--grey-400">
+                        {{post.categories}}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="{{post.url}}">
+                            Read More
+                        </a>
+                    </div>
+
+                </div>
+                {%endfor%}
+            </div>
+            {% include base_footer.html %}
+        </main>
+        <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/material.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/site.js"></script>
+</body>
+<script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function (el) {
+        var link = el.querySelector('a');
+        if (!link) {
+            return;
+        }
+        var target = link.getAttribute('href');
+        if (!target) {
+            return;
+        }
+        el.addEventListener('click', function () {
+            location.href = target;
+        });
+    });
+</script>
+
+</html>
