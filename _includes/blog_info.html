@@ -17,30 +17,9 @@
     </div>
     <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
         {%if site.posts.size > 0 %}
-        <div>
-            <strong>
-                <a href="all" class="no-url mdl-color-text--grey-600"> All Posts</a>
-            </strong>
+        <div style="text-align:center;  margin: auto; width:100%;">
+            <a href="all" class="no-url mdl-color-text--grey-600"> All Posts</a>
         </div>
-        {%endif%}
-
-        <ul class="mdl-menu mdl-js-menu mdl-menu--top-right mdl-js-ripple-effect" for="menubtn">
-
-            {%for cat in site.categories %}
-
-            <li class="mdl-menu__item">
-                <span class="mdl-chip mdl-chip--contact">
-                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">{{ cat | last | size }}</span>
-                    <span class="mdl-chip__text">{{cat}}</span>
-                </span>
-            </li>
-            {%endfor%}
-        </ul>
-        {%if site.posts.size > 0 %}
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
         {%endif%}
     </div>
 </div>
