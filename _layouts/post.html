@@ -36,11 +36,18 @@
                     <div class="mdl-card__media mdl-color-text--grey-50" style=" background-image: url( {{page.feature_image}} ); background-color:#004D40;">
                         <h3>{{page.title}}</h3>
                     </div>
+                    <div class="mdl-card__menu mdl-color-text--grey-500">
+                        <a href="{{site.baseurl}}/{{page.categories|first}}" class="no-url mdl-color-text--grey-500">{{page.categories}}</a>
+                    </div>
                     <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
                         <div class="minilogo"></div>
                         <div>
-                            <span>{{page.author}}
-                                <br> {{site.posts[0].date | date: "%b %-d, %Y"}}</span>
+                            <span>
+                                <b>
+                                    <a href="https://rohitsuratekar.com" target="_blank" class="no-url"> {{page.author}} </a>
+                                </b>
+                                <br>Posted on: <b>{{page.date | date: "%b %-d, %Y"}} </b>
+                            </span>
                         </div>
                         <div class="section-spacer"></div>
                         {% capture share_text %}{{ page.title }} : {{ site.baseurl}}{{page.url}}{% endcapture %}
@@ -55,7 +62,22 @@
                     <div class="mdl-color-text--grey-700 card-new-block">
                         {{page.content}}
                     </div>
+
+                    <div class="mdl-color-text--grey-700 card-new-block">
+                            {%for t in (1..page.tags.size) %}
+                            {%if t==1%}
+                             <b>Tags</b>: 
+                            {%endif%}
+                            {%assign ind = t|minus :1%}
+                           <i>{{page.tags[ind]}}</i> 
+                            {%if t != page.tags.size%}
+                            ,
+                            {%endif%}
+                            {%endfor%}
+                    </div>
                 </div>
+
+
 
                 <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
                     {% if page.next.url %}

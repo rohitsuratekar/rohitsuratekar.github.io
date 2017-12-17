@@ -42,6 +42,10 @@
  margin: 16px;
 }
 
+.static-page-content a{
+  text-decoration: none;
+ }
+
 .all-post-blog{
   padding-top: 130px;
 }

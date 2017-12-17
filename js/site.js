@@ -9,3 +9,8 @@ function shareBlog() {
 function goHome(){
     window.location.href = "https://rohitsuratekar.com/blog "
 }
+
+function clickThis(url){
+    console.log(url)
+    window.location.href = url
+}

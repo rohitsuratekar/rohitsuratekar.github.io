@@ -3,7 +3,7 @@
 
 <head>
     <title>All Posts</title>
- {% include base_header.html %}
+    {% include base_header.html %}
 </head>
 
 
@@ -12,21 +12,29 @@
     <div class="blog blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
         <main class="mdl-layout__content">
             <div class="demo-back">
-                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" onclick="goBack()" title="go back" role="button">
                     <i class="material-icons" role="presentation">arrow_back</i>
                 </a>
             </div>
+            {%capture cat_page%} {{page.title | downcase }} {%endcapture%}
             <div class="blog__posts mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col">
                     <div class="mdl-grid">
-                        {%for cat in site.categories %}
+                        {%for cat in site.categories %} {%capture cat_pre%} {{cat |first}} {%endcapture%} {%if cat_page==cat_pre %}
                         <span class="mdl-chip mdl-badge mdl-badge--overlap" data-badge={{ cat | last | size }}>
                             <a class="no-url mdl-chip__text mdl-color-text--grey-700" href="{{site.baseurl}}/{{cat|first}}">{{cat|first}}</a>
                         </span>
-                        {%endfor%}
+                        {%else%}
+                        <span class="mdl-chip mdl-badge mdl-badge--overlap" data-badge="" style="background:rgba(238, 238, 238, 0.301);">
+                            <a class="no-url mdl-chip__text mdl-color-text--grey-700" href="{{site.baseurl}}/{{cat|first}}">{{cat|first}}</a>
+                        </span>
+                        {%endif%} {%endfor%}
+                        <span class="mdl-chip">
+                                <a class="no-url mdl-chip__text mdl-color-text--grey-700" href="{{site.baseurl}}/all">All</a>
+                         </span>
                     </div>
                 </div>
-                {%for post in site.posts%}
+                {%for post in site.posts%} {%capture cat%} {{post.categories |first}} {%endcapture%} {%if cat == cat_page %}
                 <div class="mdl-card amazing mdl-cell mdl-cell--6-col">
                     {%if post.feature_image != null %}
                     <div class="mdl-card__media mdl-color-text--grey-50" style=" background-image: url( {{post.feature_image}} );background-color:#004D40;">
@@ -43,7 +51,7 @@
                     {% endif %}
                     <div class="mdl-card__supporting-text mdl-color-text--grey-700">
                         {{ post.content | strip_html | truncatewords: 50 }}
-                            </div>
+                    </div>
 
                     <div class="mdl-card__menu mdl-color-text--grey-400">
                         {{post.categories}}
@@ -55,7 +63,7 @@
                     </div>
 
                 </div>
-                {%endfor%}
+                {%endif%} {%endfor%}
             </div>
             {% include base_footer.html %}
         </main>

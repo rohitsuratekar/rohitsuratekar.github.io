@@ -3,7 +3,8 @@ layout: post
 title: Nietzsche, Philosophy and Me!
 date: 2012-02-04 00:00:00 +0000
 categories: philosophy
-author : "Rohit Suratekar"
+author : Rohit Suratekar
+tags: [beyond good and evil, music, Nietzsche, novel, philosophy, thoughts]
 ---
 
 
@@ -23,3 +24,6 @@ Anybody can become philosopher, ohh wait, they are! Refined and sophisticated ve
 
 Image courtesy : Wikipedia Commons [ http://en.wikipedia.org/wiki/File:Nietzsche187a.jpg ]  
 Quotes Reference: Friedrich Nietzsche. Beyond Good and Evil. Dover Publication, New York 1997
+
+
+_Original Post:_ : <a href="https://rohitsuratekar.wordpress.com/2012/02/04/nietzsche-philosophy-and-me/"> https://rohitsuratekar.wordpress.com/2012/02/04/nietzsche-philosophy-and-me/ </a>

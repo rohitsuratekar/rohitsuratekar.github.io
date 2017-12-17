@@ -121,10 +121,15 @@ font-family: 'Roboto', 'Helvetica', sans-serif;
   min-height: 64px;
   text-align: justify;
   max-width: 800px;
-  margin: 16px auto;
+  margin: 16px;
   font-size: 14px;
   line-height: 20px;
 }
+.card-new-block p{
+  word-wrap: break-word;
+  overflow-wrap: break-word
+}
+
 
 .card-new-block a{
   text-decoration: none;

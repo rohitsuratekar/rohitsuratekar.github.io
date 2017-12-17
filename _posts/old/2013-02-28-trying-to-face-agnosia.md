@@ -3,7 +3,8 @@ layout: post
 title: Trying To Face ‘Agnosia’!
 date: 2013-02-28 11:25:09 +0000
 categories: science
-author : "Rohit Suratekar"
+author : Rohit Suratekar
+tags: [Abstract Attitude, Anosia, brain, neurology, oliver sacks, prosopagnosia, review, Science]
 ---
 
 Brain is mysterious organ. It is the mastermind of all your daily activities. More you know about brain, more you will get tangled! Many researchers have spent their whole life trying to understand little but still this object is cryptic. <a href="http://en.wikipedia.org/wiki/Oliver_Sacks" target="_blank">Oliver Sacks</a> is one of those researchers. He studied many neurological cases where classical neurology faces radicle challenges to explain them. He says his whole life is with sick and that sickness drives him to think what he could not have thought without it. His most popular book “<a href="http://www.amazon.com/Man-Who-Mistook-His-Wife/dp/0684853949" target="_blank">The Man Who Mistook His Wife for a Hat and Other Clinical Tales</a>” published by ‘Simon & Schuster’ in 1985 in which he has described some case studies of his patients. This book got critically acclaimed and was economically successful. Many other websites and blogs have already spread across internet dissecting these cases.   Most fascinating study I came across in this book is the story of Dr. P. This is the story of <a href="http://en.wikipedia.org/wiki/Visual_agnosia" target="_blank">Visual Agnosia</a> patient who is not able to recognize faces. Not even his Wife’s face, which he thought is Hat!

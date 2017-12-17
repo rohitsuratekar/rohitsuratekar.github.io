@@ -3,7 +3,8 @@ layout: post
 title: Unsatisfied Desire
 date: 2014-02-22 00:00:00 +0000
 categories: philosophy
-author : "Rohit Suratekar"
+author : Rohit Suratekar
+tags: [aristotle,desire, mind, philosophy, Science, unsatisfied desire]
 ---
 
 Aristotle said once, I count him braver who overcomes his desires than him who overcomes his enemies. We all are trapped inside our endless desires. Why humans are not ever satisfied? We always want something; food, money, sex, status, friends, social life, sports, trips, peace, war, superpowers!! Our mind is constantly trying to catch something, most of the times some elusive things. Why can’t we live like other living things? Have you ever thought if reproduction and survival are the only goals, why are we worried about so many things? Many researchers are trying to orient answer to this question towards consciousness. But do you think is it really unique to us? EvolutionWe are NOT the only living things which have cognitive abilities.
@@ -32,3 +33,6 @@ External Links [ All accessed on 22 February 2014 ]
 * http://en.wikipedia.org/wiki/Desire
 
 Image Courtesy: Hardin 1999, The Funny Times.
+
+
+_Original Post:_ : <a href="https://rohitsuratekar.wordpress.com/2014/02/22/unsatisfied-desire/"> https://rohitsuratekar.wordpress.com/2014/02/22/unsatisfied-desire/ </a>

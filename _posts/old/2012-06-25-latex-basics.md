@@ -188,3 +188,6 @@ I think this much information is enough for creating your research article.  Nex
 * <a href="ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/">ProTeXt </a> [Complete] Recommended
 * <a href="http://texstudio.sourceforge.net/">TeXstudio</a>
 * <a href="http://www.tug.org/texworks/">TeXworks</a>
+
+
+_Original Post:_ : <a href="https://rohitsuratekar.wordpress.com/2012/06/25/latex-basics-for-newbies/"> https://rohitsuratekar.wordpress.com/2012/06/25/latex-basics-for-newbies/ </a>
